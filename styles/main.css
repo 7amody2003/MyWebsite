@@ -1,0 +1,129 @@
+ body {
+  padding: 0;
+  margin : 0;
+  font-family: 'Droid Arabic Kufi', serif;
+  direction: rtl; 
+  
+}
+.topnav {
+  list-style-type: none;
+  width : 100%;
+  position : fixed;        
+  z-index : 1;     
+  padding: 0;
+  margin : 0;
+  overflow: hidden;
+  background-color: #aa0033;
+  text-decoration:none; 
+}
+.topnav li {
+  float:right;  
+  text-align: center;
+  border-bottom: 3px solid #aa0033;
+  cursor : pointer;
+     
+}
+.nav-list a, .drbu {
+    padding: 14px 20px;
+    font-size : 16px;        
+    color: white;
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+@-webkit-keyframes nav{
+    from{padding : 14px 120px}
+    to{padding : 14px 20px}
+}
+.logo {
+    position: relative;
+    width : 40px;
+    height : 40px;
+  right : 10px;
+  top : 10px;
+  animation : logo 2.0s;
+}
+
+@keyframes logo{
+  0%{top: 10px}
+  25%{top : 3px}
+  50%{top : 76px}
+  50.01%{top : -60px}
+  100%{top : 10px}
+}
+.text-logo {
+  color: white;   
+  position: relative;
+  font-size: 25px;
+  font-weight: bolder;
+  display:inline-block;
+  padding : 5px 20px;
+  animation : text 2.0s 0.0s; 
+  margin-left : 10px;
+}
+a.anim {
+  -webkit-animation-name : nav;
+  -webkit-animation-duration : 2.5s;
+  animation-timing-function : cubic-bezier(2, 6, 7, 10);
+} 
+
+.nav-list:hover, .drco:hover .drco{
+  background-color: #bf0033;
+  border-bottom: 3px solid red;
+}
+@keyframes text{
+  0%{top: 0px}
+  25%{top : -6px}
+  50%{top : 52px}
+  50.01%{top : -45px}
+  100%{top : 0px}
+}
+.drco {
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  z-index: 1;
+  margin-top : 3px;
+}
+.drco a{
+  color: brown;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-left: #f9f9f9 solid 3px;
+}
+.drco a:hover {background-color:#dcd7d7;border-left : #bf0033 solid 3px;}
+.drli:hover .drco {
+    display: block;
+    position : fixed;
+}
+.list {
+    float:right;
+    background-color : gray;
+    position: relative;
+    position: fixed;
+    top : 62px;
+    width : 20%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.list a {
+    padding: 10px;
+    display: block;
+}
+.tail {
+    background-color: #3a3838;
+    width : 100%;
+    padding : 10px;
+}
+.tail p {
+    display : inline-block;
+    clear : both;
+    padding-right : 50px;
+}
+.ptail a{color : lightgray;text-decoration:none;}
+.ptail a:hover{color : white;}
+.copy{float : left; padding-left : 150px;color : white;}
+
